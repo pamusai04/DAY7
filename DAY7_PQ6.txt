@@ -1,0 +1,27 @@
+Question 6
+public class DAY7_PQ6 {
+	//6.write a function to find average of a set of numbers passed as arguments
+		
+
+    public static double calculateAverage(double... numbers) {
+        if (numbers.length == 0) {
+            return 0.0;  // Avoid division by zero for an empty set of numbers
+        }
+
+        double sum = 0.0;
+
+        for (double number : numbers) {
+            sum += number;
+        }
+
+        return sum / numbers.length;
+    }
+
+    public static void main(String[] args) {
+        double average = calculateAverage(10.5, 15.2, 20.0, 8.7);
+
+        System.out.println("The average is: " + average);
+    }
+
+
+}

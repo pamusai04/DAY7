@@ -1,0 +1,18 @@
+Question 9
+public class DAY7_PQ9 {
+	//9.write a function to convert celsius temperature into Fahrenheit
+	
+
+    public static double celsiusToFahrenheit(double celsius) {
+        return (celsius * 9 / 5) + 32;
+    }
+
+    public static void main(String[] args) {
+        double celsiusTemperature = 25.0;
+        double fahrenheitTemperature = celsiusToFahrenheit(celsiusTemperature);
+
+        System.out.println(celsiusTemperature + " degrees Celsius is equal to " + fahrenheitTemperature + " degrees Fahrenheit.");
+    }
+
+
+}

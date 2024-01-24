@@ -1,0 +1,15 @@
+Question 10
+public class DAY7_PQ10 {
+	//7.Repeat 3 using iteratve approach
+	public static int sumRec(int n){
+		int sum=0;
+		for(int i=1;i<=n;i++){
+			sum +=i;
+		}
+		return sum;
+	}
+	public static void main(String [] args){
+		int a=sumRec(5);
+		System.out.println(a);
+	}
+}

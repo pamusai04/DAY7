@@ -1,0 +1,14 @@
+Question 3
+public class DAY7_PQ3 {
+	//3.write a recursive function to calculate sum of first n natural numbers	public static int sumRec(int n){
+		if(n==1){
+			return 1;
+		}else{
+			return n+sumRec(n-1);
+		}
+	}
+	public static void main(String [] args){
+		int a=sumRec(5);
+		System.out.println(a);
+	}
+}
